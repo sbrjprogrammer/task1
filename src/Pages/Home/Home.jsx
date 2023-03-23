@@ -1,10 +1,13 @@
 import React from 'react'
 import Bar1 from '../../Components/charts/Bar/Bar'
 import "./home.css"
+import Navbar from '../../Components/Navbar/Navbar'
 
 function Home() {
     return (
-        <div className='container-fluid mt-5 '>
+        <div className='parent'>
+          <Navbar />
+         
             <h1>Dashboard</h1>
             <div className='row'>
             

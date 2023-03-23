@@ -9,6 +9,7 @@ import {
     FaThList
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import Navbar from './Navbar/Navbar';
 import "./sidebar.css"
 
 
@@ -52,8 +53,10 @@ const Sidebar = ({children}) => {
 
     
     return (
+        <>
+      
         <div className='container1'>
-            
+        
            <div style={{width: isOpen ? "200px" : "50px"}} className="sidebar">
                <div className="top_section">
                    <h1 style={{display: isOpen ? "block" : "none"}} className="logo">SDMS</h1>
@@ -61,6 +64,7 @@ const Sidebar = ({children}) => {
                        <FaBars onClick={toggle}/>
                    </div>
                </div>
+             
                {
                    menuItem.map((item, index)=>(
                        <NavLink to={item.path} key={index} className="link" activeclassName="active">
@@ -72,8 +76,9 @@ const Sidebar = ({children}) => {
            </div>
           
            <main>{children}</main>
-
+           
         </div>
+        </>
     );
 };
 
