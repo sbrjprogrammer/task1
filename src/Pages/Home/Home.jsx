@@ -5,13 +5,16 @@ import Navbar from '../../Components/Navbar/Navbar'
 
 function Home() {
     return (
-        <div className='parent'>
+
+        <>
           <Navbar />
+        <div className='parent'>
+        
          
-            <h1>Dashboard</h1>
-            <div className='row'>
+            <h3 className='m-5'>Dashboard</h3>
+            <div className='row m-5'>
             
-                <div className='col-md-3 col-sm-2 ms-4 recordbox  '>
+                <div className='col-md-3 col-sm-2 ms-4 recordbox'>
                     <h6 className='mt-2'>Current Month total order </h6> 
                     <h1 className='text-center mt-5'>5</h1>
                 </div>
@@ -32,7 +35,7 @@ function Home() {
             
 
 
-            <div className='row mt-2'>
+            <div className='row m-5'>
             
 
             <div className='col-md-3 col-sm-2 ms-4 recordbox  bg-primary '>
@@ -52,13 +55,16 @@ function Home() {
             
         </div>
 
-      <div className='row mt-5'>
-      <div className='col-md-6'>
+      <div className='row mt-5 ms-5'>
+      <div className='col-md-5'>
       <Bar1/>
       </div>
+
+
       <div className='col-md-6'></div>
       </div>
         </div>
+        </>
     )
 }
 

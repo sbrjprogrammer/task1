@@ -5,15 +5,17 @@
 }
 .container1{
   display:flex;
-  height: auto;
+  height: 100%;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
 }
 
-.nav2{
-  display: block;
-  width: 100%;
-  height: 10vh;
-  background-color:black;
-}
+
 main{
   display: block;
   width: 100%;
@@ -22,7 +24,7 @@ main{
 .sidebar{
   background: #1E282C;
   color: #fff;
-  height: 100vh;
+  height: auto;
   width: 200px;
   transition: all 0.5s;
 }
@@ -45,6 +47,7 @@ main{
   padding: 10px 15px;
   gap: 15px;
   transition: all 0.5s;
+  text-decoration: none;
 }
 .link:hover{
   /* background:lightskyblue; */
@@ -57,4 +60,33 @@ main{
 } */
 .icon, .link_text{
   font-size: 1rem;
+text-decoration: none;
 }
+
+.submenu{
+  margin-left: -50px;
+  position: relative;
+  
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.link_text::before{
+  content: "\f0d7";
+  position: absolute;
+  line-height: 50px;
+  color: #fafafa;
+right: 65%;
+}
+
+
+ 
